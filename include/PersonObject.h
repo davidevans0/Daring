@@ -1,18 +1,20 @@
 #ifndef PERSONOBJECT_H
 #define PERSONOBJECT_H
 
+#include "MazeObject.h"
+
 class PersonObject
 {
     public:
-        PersonObject();
+        PersonObject(MazeObject*);
         ~PersonObject() {}
-        void moveup(int);
-        void movedown(int);
-        void moveleft(int);
-        void moveright(int);
+        void moveup(MazeObject*,int, char&);
+        void movedown(MazeObject*,int, char&);
+        void moveleft(MazeObject*,int, char&);
+        void moveright(MazeObject*,int, char&);
         void setsymbol(char);
         char getsymbol();
-        void setlocation(int,int);
+        void setlocation(MazeObject*,int,int);
         int getxlocation();
         int getylocation();
 

@@ -12,11 +12,10 @@ class MazeObject
         void displayMaze();
         void insertInMaze(int,int,char);
         char getFromMaze(int,int);
-        void moveInMaze(int,int,char);
-        char lookUp();
-        char lookDown();
-        char lookRight();
-        char lookLeft();
+        char lookUp(int, int);
+        char lookDown(int, int);
+        char lookRight(int, int);
+        char lookLeft(int, int);
         void killlook();
 
     private:

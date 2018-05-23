@@ -7,29 +7,45 @@
  object is used to create player and implements motion once
  within the maze.
 --------------------------------------------------------------*/
-PersonObject::PersonObject()
+PersonObject::PersonObject(MazeObject* inMaze)
 {
     xLoc = STARTX;
     yLoc = STARTY;
     Symbol = '0'; //default symbol
+    inMaze->insertInMaze(xLoc,yLoc,Symbol);
+
 }
 
-void PersonObject::moveup(int amount)
+bool PersonObject::moveup(MazeObject* inMaze, int amount, char& c)
 {
-    xLoc = xLoc - amount;
+    bool moved = false;
+
+    c = inMaze->lookUp();
+    if (c == FLOOR)
+    {
+        inMaze->insertInMaze(xLoc, yLoc, FLOOR)
+        xLoc = xLoc - amount;
+        inMaze->insertInMaze(xLoc, yLoc, FLOOR)
+        moved = true;
+    }
+    else
+    {
+        moved = false;
+    }
+    return moved;
 }
 
-void PersonObject::movedown(int amount)
+void PersonObject::movedown(MazeObject* inMaze, int amount)
 {
     xLoc = xLoc + amount;
 }
 
-void PersonObject::moveleft(int amount)
+void PersonObject::moveleft(MazeObject* inMaze, int amount)
 {
     yLoc = yLoc - amount;
 }
 
-void PersonObject::moveright(int amount)
+void PersonObject::moveright(MazeObject* inMaze, int amount)
 {
     yLoc = yLoc + amount;
 }
@@ -44,7 +60,7 @@ char PersonObject::getsymbol ()
     return Symbol;
 }
 
-void PersonObject::setlocation(int x, int y)
+void PersonObject::setlocation(MazeObject* inMaze, int x, int y)
 {
     xLoc = x;
     yLoc = y;

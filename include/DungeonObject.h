@@ -34,7 +34,8 @@ class DungeonObject
         int playerState;
 
         MazeObject Maze;
-        cPlayer Person;
+        cPlayer PlayerOne;
+
         char encounter;
 
         Monster Goblin1;

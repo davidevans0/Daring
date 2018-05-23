@@ -17,13 +17,10 @@ moving characters within the maze
 --------------------------------------------------------------*/
 MazeObject::MazeObject()
 {
-    pre_symbol = ' ';
 }
 
 void MazeObject::insertInMaze(int x, int y, char c)
 {
-    cur_x = x;
-    cur_y = y;
     Maze[x][y] = c;
 }
 
@@ -32,41 +29,25 @@ char MazeObject::getFromMaze(int x, int y)
     return Maze[x][y];
 }
 
-void MazeObject::moveInMaze(int x, int y, char symbol)
-{
-    Maze[cur_x][cur_y] = pre_symbol;
-    pre_symbol = Maze[x][y];
-    Maze[x][y] = symbol;
-    cur_x = x;
-    cur_y = y;
-}
 // returns the character above current position
-char MazeObject::lookUp()
+char MazeObject::lookUp(int x, int y)
 {
-    look_x = cur_x - SPEED;
-    look_y = cur_y;
-    return Maze[look_x][look_y];
+    return Maze[x - SPEED][y];
 }
 // returns the character below current position
-char MazeObject::lookDown()
+char MazeObject::lookDown(int x, int y)
 {
-    look_x = cur_x + SPEED;
-    look_y = cur_y;
-    return Maze[look_x][look_y];
+    return Maze[x + SPEED][y];
 }
 // returns the character to the right current position
-char MazeObject::lookRight()
+char MazeObject::lookRight(int x, int y)
 {
-    look_x = cur_x;
-    look_y = cur_y + SPEED;
-    return Maze[look_x][look_y];
+    return Maze[x][y + SPEED];
 }
 // returns the character to the left current position
-char MazeObject::lookLeft()
+char MazeObject::lookLeft(int x, int y)
 {
-    look_x = cur_x;
-    look_y = cur_y - SPEED;
-    return Maze[look_x][look_y];
+    return Maze[x][y - SPEED];
 }
 
 void MazeObject::killlook()

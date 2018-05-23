@@ -1,9 +1,10 @@
 # depslib dependency file v1.0
-1527107798 source:c:\users\c252496\desktop\c++ class\daring\src\personobject.cpp
+1527108060 source:c:\users\c252496\desktop\c++ class\daring\src\personobject.cpp
 	"types.h"
 	"PersonObject.h"
 
-1527107755 c:\users\c252496\desktop\c++ class\daring\include\personobject.h
+1527114556 c:\users\c252496\desktop\c++ class\daring\include\personobject.h
+	"MazeObject.h"
 
 1526685442 source:c:\users\c252496\desktop\c++ class\daring\main.cpp
 	<fstream>
@@ -19,7 +20,7 @@
 	"cPlayer.h"
 	"CombatObject.h"
 
-1526523210 c:\users\c252496\desktop\c++ class\daring\include\mazeobject.h
+1527114382 c:\users\c252496\desktop\c++ class\daring\include\mazeobject.h
 	"types.h"
 
 1526866488 source:c:\users\c252496\desktop\c++ class\daring\src\mazeobject.cpp
@@ -30,7 +31,7 @@
 	<fstream>
 	<stdlib.h>
 
-1527107755 source:c:\users\c252496\desktop\c++ class\daring\src\dungeonobject.cpp
+1527114252 source:c:\users\c252496\desktop\c++ class\daring\src\dungeonobject.cpp
 	<fstream>
 	<windows.h>
 	<conio.h>
@@ -42,14 +43,14 @@
 	"CombatObject.h"
 	"DungeonObject.h"
 
-1526683738 c:\users\c252496\desktop\c++ class\daring\include\dungeonobject.h
+1527114946 c:\users\c252496\desktop\c++ class\daring\include\dungeonobject.h
 	"types.h"
 	"cPlayer.h"
 	"MazeObject.h"
 	"Monster.h"
 	"CombatObject.h"
 
-1527107754 c:\users\c252496\desktop\c++ class\daring\include\types.h
+1527108060 c:\users\c252496\desktop\c++ class\daring\include\types.h
 
 1526689040 source:c:\users\benev\desktop\daring\main.cpp
 	<fstream>
@@ -170,7 +171,7 @@
 	<iostream>
 	"PersonObject.h"
 
-1527107900 c:\users\c252496\desktop\c++ class\daring\include\combatobject.h
+1527108060 c:\users\c252496\desktop\c++ class\daring\include\combatobject.h
 	"cPlayer.h"
 	"Monster.h"
 	"RandomObject.h"

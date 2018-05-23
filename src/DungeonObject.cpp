@@ -20,13 +20,12 @@ And moves player within dungeon maze.
 // Constructor initializes all monster stats, as well as creating the maze, and inserting the player into maze
 DungeonObject::DungeonObject()
 {
-    playerAccess = &Person;
+    playerAccess = &PlayerOne;
     mazeAccess = &Maze;
 
     Maze.loadMaze();
 
-    Person.setsymbol(PERSON);
-    Maze.insertInMaze(Person.getxlocation(),Person.getylocation(),Person.getsymbol());
+    PlayerOne.setsymbol(PERSON);
 
     Goblin1.setMonsterStats(30,10,5,"Dagger","Quick Stab","Goblin");
     Goblin2.setMonsterStats(30,20,5,"Dagger","Quick Stab","Goblin");
@@ -58,8 +57,8 @@ void DungeonObject::intro()
 
     cout << "Please enter name of your HERO: ";
     getline (cin, nameTemp);
-    Person.setheroName(nameTemp);
-    cout << endl << "Welcome, " << Person.getheroName() << " to the DARING DUNGEON!" << endl << endl;
+    PlayerOne.setheroName(nameTemp);
+    cout << endl << "Welcome, " << PlayerOne.getheroName() << " to the DARING DUNGEON!" << endl << endl;
 
     while (!goodInput)
     {
@@ -71,20 +70,20 @@ void DungeonObject::intro()
         {
             case '1':
                 cout << "You have chosen Warrior Lord !" << endl << endl;
-                Person.setPlayerStats(30,110,10,"Sword","Shield", "Shield Bash");
-                Person.setCharType("Warrior Lord");
+                PlayerOne.setPlayerStats(30,110,10,"Sword","Shield", "Shield Bash");
+                PlayerOne.setCharType("Warrior Lord");
                 goodInput = true;
                 break;
             case '2':
                 cout << "You have chosen Arch Mage !" << endl << endl;
-                Person.setPlayerStats(10,80,50,"Staff","Dagger", "Incinerate");
-                Person.setCharType("Arch Mage");
+                PlayerOne.setPlayerStats(10,80,50,"Staff","Dagger", "Incinerate");
+                PlayerOne.setCharType("Arch Mage");
                 goodInput = true;
                 break;
             case '3':
                 cout << "You have chosen Master Thief !" << endl << endl;
-                Person.setPlayerStats(20,70,40,"Short Sword","Shuriken", "Shadow Slice");
-                Person.setCharType("Master Thief");
+                PlayerOne.setPlayerStats(20,70,40,"Short Sword","Shuriken", "Shadow Slice");
+                PlayerOne.setCharType("Master Thief");
                 goodInput = true;
                 break;
             default:
@@ -95,8 +94,8 @@ void DungeonObject::intro()
 
     }
 
-    cout << Person.getheroName() << " your starting stats are as follows: " << endl << endl;
-    Person.showStats();
+    cout << PlayerOne.getheroName() << " your starting stats are as follows: " << endl << endl;
+    PlayerOne.showStats();
 
     system("PAUSE");
     // start of the game
@@ -126,7 +125,7 @@ void DungeonObject::intro()
     cout <<"p-----'-_`-,       ` `    ./`-----"<< endl;
     cout <<"p-------`-(_             )--------"<< endl;
     cout <<"p----------^^\\..___,.--`----------"<< endl << endl;
-    cout <<"Prepare thine self " << Person.getheroName() << ", you may now enter my lair! MWAHAHAHAHAA" << endl << endl;
+    cout <<"Prepare thine self " << PlayerOne.getheroName() << ", you may now enter my lair! MWAHAHAHAHAA" << endl << endl;
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), GREEN);
     system("PAUSE");
 }
@@ -240,31 +239,19 @@ bool DungeonObject::MovePerson(char str)
     switch (str)
     {
         case 'U':
-            if (Maze.lookUp() == FLOOR)
-            {
-                Person.moveup(SPEED);
-            } else hit_symbol = Maze.lookUp();
+            PlayerOne.moveup(mazeAccess, SPEED);
             break;
         case 'D':
-            if (Maze.lookDown() == FLOOR)
-            {
-                Person.movedown(SPEED);
-            } else hit_symbol = Maze.lookDown();
+            PlayerOne.movedown(mazeAccess, SPEED);
             break;
         case 'L':
-            if (Maze.lookLeft() == FLOOR)
-            {
-                Person.moveleft(SPEED);
-            } else hit_symbol = Maze.lookLeft();
+            PlayerOne.moveleft(mazeAccess, SPEED);
             break;
         case 'R':
-            if (Maze.lookRight() == FLOOR)
-            {
-                Person.moveright(SPEED);
-            } else hit_symbol = Maze.lookRight();
+            PlayerOne.moveright(mazeAccess, SPEED);
             break;
     }
-    Maze.moveInMaze(Person.getxlocation(),Person.getylocation(),Person.getsymbol());
+    Maze.moveInMaze(PlayerOne.getxlocation(),PlayerOne.getylocation(),PlayerOne.getsymbol());
     //We hit the wall which is not an encounter
     if ((hit_symbol != WALL) && (hit_symbol != FLOOR) && (hit_symbol != HWALL) && (hit_symbol != UWALL))
     {
