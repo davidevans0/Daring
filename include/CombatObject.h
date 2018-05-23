@@ -12,7 +12,7 @@ class CombatObject
         CombatObject(){}
        ~CombatObject(){}
 
-       string combatPrompt(cPlayer); //
+       string combatPrompt(cPlayer);
        bool doCombat(cPlayer*,Monster);
 
 

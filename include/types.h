@@ -4,6 +4,13 @@
 #define MAZEX 20
 #define MAZEY 77
 
+#define STARTX 18
+#define STARTY 4
+
+#define GOBLINPROMPT ".//data//GoblinArt.txt"
+#define MURLOCKPROMPT ".//data//MurlockArt.txt"
+#define WRAITHPROMPT ".//data//WraithArt.txt"
+
 #define KEY_UP 72
 #define KEY_DOWN 80
 #define KEY_LEFT 75

@@ -11,13 +11,9 @@
 #include "CombatObject.h"
 #include "DungeonObject.h"
 
-#define GOBLINPROMPT ".//data//GoblinArt.txt"
-#define MURLOCKPROMPT ".//data//MurlockArt.txt"
-#define WRAITHPROMPT ".//data//WraithArt.txt"
-
 using namespace std;
 /*-------------------------------------------------------------
- Object DungeonObject
+Object DungeonObject
 object creates monsters, prints intro, displays encounter text,
 And moves player within dungeon maze.
 --------------------------------------------------------------*/

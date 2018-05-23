@@ -1,9 +1,6 @@
 #ifndef PERSONOBJECT_H
 #define PERSONOBJECT_H
 
-#define STARTX 18
-#define STARTY 4
-
 class PersonObject
 {
     public:

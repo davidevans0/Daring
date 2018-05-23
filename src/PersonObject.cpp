@@ -1,5 +1,6 @@
+
+#include "types.h"
 #include "PersonObject.h"
-#include "cPlayer.h"
 
 /*-------------------------------------------------------------
  Object PersonObject
