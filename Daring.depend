@@ -1,0 +1,458 @@
+# depslib dependency file v1.0
+1525799470 source:c:\users\c252496\desktop\c++ class\daring\src\personobject.cpp
+	"PersonObject.h"
+	"cPlayer.h"
+
+1526327258 c:\users\c252496\desktop\c++ class\daring\include\personobject.h
+
+1526338811 source:c:\users\c252496\desktop\c++ class\daring\main.cpp
+	<conio.h>
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	"types.h"
+	"MazeObject.h"
+	"PersonObject.h"
+	"DungeonObject.h"
+	"cPlayer.h"
+	"CombatObject.h"
+
+1525365548 c:\users\c252496\desktop\c++ class\daring\include\mazeobject.h
+
+1525742684 source:c:\users\c252496\desktop\c++ class\daring\src\mazeobject.cpp
+	"MazeObject.h"
+	"types.h"
+	<iostream>
+	<windows.h>
+	<fstream>
+	<stdlib.h>
+
+1526336867 source:c:\users\c252496\desktop\c++ class\daring\src\dungeonobject.cpp
+	<fstream>
+	<windows.h>
+	<conio.h>
+	<iostream>
+	<stdlib.h>
+	"types.h"
+	"PersonObject.h"
+	"CombatObject.h"
+	"DungeonObject.h"
+
+1526335718 c:\users\c252496\desktop\c++ class\daring\include\dungeonobject.h
+	"types.h"
+	"cPlayer.h"
+	"MazeObject.h"
+	"Monster.h"
+	"CombatObject.h"
+
+1526335718 c:\users\c252496\desktop\c++ class\daring\include\types.h
+
+1526689040 source:c:\users\benev\desktop\daring\main.cpp
+	<fstream>
+	<windows.h>
+	<conio.h>
+	<iostream>
+	<stdlib.h>
+	<string>
+	"types.h"
+	"MazeObject.h"
+	"PersonObject.h"
+	"DungeonObject.h"
+	"cPlayer.h"
+	"CombatObject.h"
+
+1526526810 c:\users\benev\desktop\daring\include\mazeobject.h
+	"types.h"
+
+1526330860 c:\users\benev\desktop\daring\include\personobject.h
+
+1526687337 c:\users\benev\desktop\daring\include\dungeonobject.h
+	"types.h"
+	"cPlayer.h"
+	"MazeObject.h"
+	"Monster.h"
+	"CombatObject.h"
+
+1526687960 c:\users\benev\desktop\daring\include\types.h
+
+1526953784 source:c:\users\benev\desktop\daring\src\dungeonobject.cpp
+	<fstream>
+	<windows.h>
+	<conio.h>
+	<iostream>
+	<stdlib.h>
+	<string>
+	"types.h"
+	"PersonObject.h"
+	"CombatObject.h"
+	"DungeonObject.h"
+
+1526870086 source:c:\users\benev\desktop\daring\src\mazeobject.cpp
+	"MazeObject.h"
+	"types.h"
+	<iostream>
+	<windows.h>
+	<fstream>
+	<stdlib.h>
+
+1526684043 source:c:\users\benev\desktop\daring\src\personobject.cpp
+	"PersonObject.h"
+	"cPlayer.h"
+
+1526684042 source:c:\users\benev\desktop\daring\src\cplayer.cpp
+	<iostream>
+	<cstdlib>
+	"cPlayer.h"
+	"DungeonObject.h"
+
+1526502222 c:\users\benev\desktop\daring\include\cplayer.h
+	<iostream>
+	"PersonObject.h"
+
+1526501966 c:\users\benev\desktop\daring\include\monster.h
+	<iostream>
+	"PersonObject.h"
+
+1525801674 source:c:\users\benev\desktop\daring\combatobjecct.cpp
+	"types.h"
+	<iostream>
+	<windows.h>
+	<fstream>
+	<stdlib.h>
+	"cPlayer.h"
+	"DungeonObject.h"
+	"PersonObject.h"
+
+1526082860 c:\users\benev\desktop\daring\include\combatobjecct.h
+	<iostream>
+	<windows.h>
+	<fstream>
+	<stdlib.h>
+	"DungeonObject.h"
+	"PersonObject.h"
+
+1526082096 source:c:\users\benev\desktop\daring\src\combatobjecct.cpp
+	"types.h"
+	<iostream>
+	<windows.h>
+	<fstream>
+	<stdlib.h>
+	"cPlayer.h"
+	"DungeonObject.h"
+	"PersonObject.h"
+
+1526684039 c:\users\benev\desktop\daring\include\combatobject.h
+	"cPlayer.h"
+	"Monster.h"
+	"RandomObject.h"
+
+1526689126 source:c:\users\benev\desktop\daring\src\combatobject.cpp
+	"types.h"
+	<fstream>
+	<windows.h>
+	<conio.h>
+	<iostream>
+	<stdlib.h>
+	<string>
+	"CombatObject.h"
+	"PersonObject.h"
+	"cPlayer.h"
+
+1526327258 c:\users\c252496\desktop\c++ class\daring\include\cplayer.h
+	<iostream>
+	"PersonObject.h"
+
+1526327389 c:\users\c252496\desktop\c++ class\daring\include\monster.h
+	<iostream>
+	"PersonObject.h"
+
+1526327330 c:\users\c252496\desktop\c++ class\daring\include\combatobject.h
+	"cPlayer.h"
+
+1526327343 source:c:\users\c252496\desktop\c++ class\daring\src\combatobject.cpp
+	"types.h"
+	<iostream>
+	<windows.h>
+	<fstream>
+	<stdlib.h>
+	"CombatObject.h"
+	"DungeonObject.h"
+	"PersonObject.h"
+
+1526082012 source:c:\users\c252496\desktop\c++ class\daring\src\cplayer.cpp
+	<iostream>
+	<cstdlib>
+	"cPlayer.h"
+	"DungeonObject.h"
+
+1526327344 source:c:\users\albazar\desktop\daring\src\combatobject.cpp
+	"types.h"
+	<iostream>
+	<windows.h>
+	<fstream>
+	<stdlib.h>
+	"CombatObject.h"
+	"DungeonObject.h"
+	"PersonObject.h"
+
+1526335720 c:\users\albazar\desktop\daring\include\types.h
+
+1526327332 c:\users\albazar\desktop\daring\include\combatobject.h
+	"cPlayer.h"
+
+1526327260 c:\users\albazar\desktop\daring\include\cplayer.h
+	<iostream>
+	"PersonObject.h"
+
+1526327260 c:\users\albazar\desktop\daring\include\personobject.h
+
+1526339826 c:\users\albazar\desktop\daring\include\dungeonobject.h
+	"types.h"
+	"cPlayer.h"
+	"MazeObject.h"
+	"Monster.h"
+	"CombatObject.h"
+
+1525365548 c:\users\albazar\desktop\daring\include\mazeobject.h
+
+1526327390 c:\users\albazar\desktop\daring\include\monster.h
+	<iostream>
+	"PersonObject.h"
+
+1526082012 source:c:\users\albazar\desktop\daring\src\cplayer.cpp
+	<iostream>
+	<cstdlib>
+	"cPlayer.h"
+	"DungeonObject.h"
+
+1525742684 source:c:\users\albazar\desktop\daring\src\mazeobject.cpp
+	"MazeObject.h"
+	"types.h"
+	<iostream>
+	<windows.h>
+	<fstream>
+	<stdlib.h>
+
+1525799470 source:c:\users\albazar\desktop\daring\src\personobject.cpp
+	"PersonObject.h"
+	"cPlayer.h"
+
+1526339828 source:c:\users\albazar\desktop\daring\main.cpp
+	<conio.h>
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	"types.h"
+	"MazeObject.h"
+	"PersonObject.h"
+	"DungeonObject.h"
+	"cPlayer.h"
+	"CombatObject.h"
+
+1526684042 source:c:\users\benev\desktop\daring\src\monster.cpp
+	<iostream>
+	<cstdlib>
+	"Monster.h"
+
+1526870085 source:c:\users\benev\desktop\daring\src\randomobject.cpp
+	<random>
+	<iostream>
+	<ctime>
+	"types.h"
+	"RandomObject.h"
+
+1526504854 c:\users\benev\desktop\daring\include\randomobject.h
+	<random>
+
+1526347716 source:c:\users\albazar\desktop\c++ class\daring\main.cpp
+	<conio.h>
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	"types.h"
+	"MazeObject.h"
+	"PersonObject.h"
+	"DungeonObject.h"
+	"cPlayer.h"
+	"CombatObject.h"
+
+1526515602 c:\users\albazar\desktop\c++ class\daring\include\types.h
+
+1526523208 c:\users\albazar\desktop\c++ class\daring\include\mazeobject.h
+	"types.h"
+
+1526327260 c:\users\albazar\desktop\c++ class\daring\include\personobject.h
+
+1526438682 c:\users\albazar\desktop\c++ class\daring\include\dungeonobject.h
+	"types.h"
+	"cPlayer.h"
+	"MazeObject.h"
+	"Monster.h"
+	"CombatObject.h"
+
+1526498622 c:\users\albazar\desktop\c++ class\daring\include\cplayer.h
+	<iostream>
+	"PersonObject.h"
+
+1526498366 c:\users\albazar\desktop\c++ class\daring\include\monster.h
+	<iostream>
+	"PersonObject.h"
+
+1526522396 c:\users\albazar\desktop\c++ class\daring\include\combatobject.h
+	"cPlayer.h"
+	"Monster.h"
+
+1526522383 source:c:\users\albazar\desktop\c++ class\daring\src\combatobject.cpp
+	"types.h"
+	<iostream>
+	<windows.h>
+	<fstream>
+	<stdlib.h>
+	"CombatObject.h"
+	"DungeonObject.h"
+	"PersonObject.h"
+	"cPlayer.h"
+
+1526498622 source:c:\users\albazar\desktop\c++ class\daring\src\cplayer.cpp
+	<iostream>
+	<cstdlib>
+	"cPlayer.h"
+	"DungeonObject.h"
+
+1526517150 source:c:\users\albazar\desktop\c++ class\daring\src\dungeonobject.cpp
+	<fstream>
+	<windows.h>
+	<conio.h>
+	<iostream>
+	<stdlib.h>
+	"types.h"
+	"PersonObject.h"
+	"CombatObject.h"
+	"DungeonObject.h"
+
+1525742684 source:c:\users\albazar\desktop\c++ class\daring\src\mazeobject.cpp
+	"MazeObject.h"
+	"types.h"
+	<iostream>
+	<windows.h>
+	<fstream>
+	<stdlib.h>
+
+1526498352 source:c:\users\albazar\desktop\c++ class\daring\src\monster.cpp
+	<iostream>
+	<cstdlib>
+	"Monster.h"
+
+1525799470 source:c:\users\albazar\desktop\c++ class\daring\src\personobject.cpp
+	"PersonObject.h"
+	"cPlayer.h"
+
+1526516138 source:c:\users\albazar\desktop\c++ class\daring\src\randomobject.cpp
+	<random>
+	<iostream>
+	<ctime>
+	"types.h"
+	"RandomObject.h"
+
+1526501254 c:\users\albazar\desktop\c++ class\daring\include\randomobject.h
+	<random>
+
+1526654533 source:c:\users\c252496\desktop\c++ class\daring - dev\main.cpp
+	<fstream>
+	<windows.h>
+	<conio.h>
+	<iostream>
+	<stdlib.h>
+	<string>
+	"types.h"
+	"MazeObject.h"
+	"PersonObject.h"
+	"DungeonObject.h"
+	"cPlayer.h"
+	"CombatObject.h"
+
+1526656463 c:\users\c252496\desktop\c++ class\daring - dev\include\types.h
+
+1526523210 c:\users\c252496\desktop\c++ class\daring - dev\include\mazeobject.h
+	"types.h"
+
+1526327260 c:\users\c252496\desktop\c++ class\daring - dev\include\personobject.h
+
+1526602272 c:\users\c252496\desktop\c++ class\daring - dev\include\dungeonobject.h
+	"types.h"
+	"cPlayer.h"
+	"MazeObject.h"
+	"Monster.h"
+	"CombatObject.h"
+
+1526498622 c:\users\c252496\desktop\c++ class\daring - dev\include\cplayer.h
+	<iostream>
+	"PersonObject.h"
+
+1526498366 c:\users\c252496\desktop\c++ class\daring - dev\include\monster.h
+	<iostream>
+	"PersonObject.h"
+
+1526604532 c:\users\c252496\desktop\c++ class\daring - dev\include\combatobject.h
+	"cPlayer.h"
+	"Monster.h"
+	"RandomObject.h"
+
+1526501254 c:\users\c252496\desktop\c++ class\daring - dev\include\randomobject.h
+	<random>
+
+1526610124 source:c:\users\c252496\desktop\c++ class\daring - dev\src\combatobject.cpp
+	"types.h"
+	<fstream>
+	<windows.h>
+	<conio.h>
+	<iostream>
+	<stdlib.h>
+	<string>
+	"CombatObject.h"
+	"DungeonObject.h"
+	"PersonObject.h"
+	"cPlayer.h"
+
+1526498622 source:c:\users\c252496\desktop\c++ class\daring - dev\src\cplayer.cpp
+	<iostream>
+	<cstdlib>
+	"cPlayer.h"
+	"DungeonObject.h"
+
+1526607078 source:c:\users\c252496\desktop\c++ class\daring - dev\src\dungeonobject.cpp
+	<fstream>
+	<windows.h>
+	<conio.h>
+	<iostream>
+	<stdlib.h>
+	<string>
+	"types.h"
+	"PersonObject.h"
+	"CombatObject.h"
+	"DungeonObject.h"
+
+1526523210 source:c:\users\c252496\desktop\c++ class\daring - dev\src\mazeobject.cpp
+	"MazeObject.h"
+	"types.h"
+	<iostream>
+	<windows.h>
+	<fstream>
+	<stdlib.h>
+
+1526498352 source:c:\users\c252496\desktop\c++ class\daring - dev\src\monster.cpp
+	<iostream>
+	<cstdlib>
+	"Monster.h"
+
+1525799470 source:c:\users\c252496\desktop\c++ class\daring - dev\src\personobject.cpp
+	"PersonObject.h"
+	"cPlayer.h"
+
+1526516138 source:c:\users\c252496\desktop\c++ class\daring - dev\src\randomobject.cpp
+	<random>
+	<iostream>
+	<ctime>
+	"types.h"
+	"RandomObject.h"
+
