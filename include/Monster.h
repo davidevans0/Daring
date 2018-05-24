@@ -11,8 +11,8 @@ class Monster : public PersonObject
 {
     public:
 
-       Monster() {}
-       ~Monster(){}
+        Monster(){};
+        ~Monster(){}
 
         void setMonsterStats(int, int, int , string , string, string);
         void showStats();

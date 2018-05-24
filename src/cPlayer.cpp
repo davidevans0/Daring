@@ -1,7 +1,6 @@
 #include <iostream>
-#include <cstdlib>
+
 #include "cPlayer.h"
-#include "DungeonObject.h"
 
 using namespace std;
 /*-------------------------------------------------------------
@@ -9,9 +8,6 @@ using namespace std;
  object is used to create individual player and set their
  characteristics used in motion and combat.
 --------------------------------------------------------------*/
-cPlayer::cPlayer()
-{
-}
 
 void cPlayer::showStats() //used to print out unique hero stats
 {

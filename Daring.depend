@@ -1,12 +1,13 @@
 # depslib dependency file v1.0
-1527108060 source:c:\users\c252496\desktop\c++ class\daring\src\personobject.cpp
+1527185999 source:c:\users\c252496\desktop\c++ class\daring\src\personobject.cpp
 	"types.h"
 	"PersonObject.h"
-
-1527114556 c:\users\c252496\desktop\c++ class\daring\include\personobject.h
 	"MazeObject.h"
 
-1526685442 source:c:\users\c252496\desktop\c++ class\daring\main.cpp
+1527186008 c:\users\c252496\desktop\c++ class\daring\include\personobject.h
+	"MazeObject.h"
+
+1527168309 source:c:\users\c252496\desktop\c++ class\daring\main.cpp
 	<fstream>
 	<windows.h>
 	<conio.h>
@@ -20,10 +21,10 @@
 	"cPlayer.h"
 	"CombatObject.h"
 
-1527114382 c:\users\c252496\desktop\c++ class\daring\include\mazeobject.h
+1527168309 c:\users\c252496\desktop\c++ class\daring\include\mazeobject.h
 	"types.h"
 
-1526866488 source:c:\users\c252496\desktop\c++ class\daring\src\mazeobject.cpp
+1527168309 source:c:\users\c252496\desktop\c++ class\daring\src\mazeobject.cpp
 	"MazeObject.h"
 	"types.h"
 	<iostream>
@@ -31,7 +32,7 @@
 	<fstream>
 	<stdlib.h>
 
-1527114252 source:c:\users\c252496\desktop\c++ class\daring\src\dungeonobject.cpp
+1527191886 source:c:\users\c252496\desktop\c++ class\daring\src\dungeonobject.cpp
 	<fstream>
 	<windows.h>
 	<conio.h>
@@ -43,14 +44,14 @@
 	"CombatObject.h"
 	"DungeonObject.h"
 
-1527114946 c:\users\c252496\desktop\c++ class\daring\include\dungeonobject.h
+1527191893 c:\users\c252496\desktop\c++ class\daring\include\dungeonobject.h
 	"types.h"
-	"cPlayer.h"
 	"MazeObject.h"
 	"Monster.h"
 	"CombatObject.h"
+	"cPlayer.h"
 
-1527108060 c:\users\c252496\desktop\c++ class\daring\include\types.h
+1527168309 c:\users\c252496\desktop\c++ class\daring\include\types.h
 
 1526689040 source:c:\users\benev\desktop\daring\main.cpp
 	<fstream>
@@ -163,20 +164,20 @@
 	"PersonObject.h"
 	"cPlayer.h"
 
-1526498622 c:\users\c252496\desktop\c++ class\daring\include\cplayer.h
+1527186229 c:\users\c252496\desktop\c++ class\daring\include\cplayer.h
 	<iostream>
 	"PersonObject.h"
 
-1526498366 c:\users\c252496\desktop\c++ class\daring\include\monster.h
+1527184510 c:\users\c252496\desktop\c++ class\daring\include\monster.h
 	<iostream>
 	"PersonObject.h"
 
-1527108060 c:\users\c252496\desktop\c++ class\daring\include\combatobject.h
+1527168309 c:\users\c252496\desktop\c++ class\daring\include\combatobject.h
 	"cPlayer.h"
 	"Monster.h"
 	"RandomObject.h"
 
-1526685528 source:c:\users\c252496\desktop\c++ class\daring\src\combatobject.cpp
+1527168309 source:c:\users\c252496\desktop\c++ class\daring\src\combatobject.cpp
 	"types.h"
 	<fstream>
 	<windows.h>
@@ -188,11 +189,9 @@
 	"PersonObject.h"
 	"cPlayer.h"
 
-1526680444 source:c:\users\c252496\desktop\c++ class\daring\src\cplayer.cpp
+1527179878 source:c:\users\c252496\desktop\c++ class\daring\src\cplayer.cpp
 	<iostream>
-	<cstdlib>
 	"cPlayer.h"
-	"DungeonObject.h"
 
 1526327344 source:c:\users\albazar\desktop\daring\src\combatobject.cpp
 	"types.h"
@@ -465,15 +464,115 @@
 	"types.h"
 	"RandomObject.h"
 
-1526501254 c:\users\c252496\desktop\c++ class\daring\include\randomobject.h
+1527168309 c:\users\c252496\desktop\c++ class\daring\include\randomobject.h
 	<random>
 
-1526680444 source:c:\users\c252496\desktop\c++ class\daring\src\monster.cpp
+1527180802 source:c:\users\c252496\desktop\c++ class\daring\src\monster.cpp
 	<iostream>
 	<cstdlib>
 	"Monster.h"
 
-1526866486 source:c:\users\c252496\desktop\c++ class\daring\src\randomobject.cpp
+1527168309 source:c:\users\c252496\desktop\c++ class\daring\src\randomobject.cpp
+	<random>
+	<iostream>
+	<ctime>
+	"types.h"
+	"RandomObject.h"
+
+1527168309 source:c:\users\c252496\desktop\c++ class\daring\daring\main.cpp
+	<fstream>
+	<windows.h>
+	<conio.h>
+	<iostream>
+	<stdlib.h>
+	<string>
+	"types.h"
+	"MazeObject.h"
+	"PersonObject.h"
+	"DungeonObject.h"
+	"cPlayer.h"
+	"CombatObject.h"
+
+1527168309 c:\users\c252496\desktop\c++ class\daring\daring\include\types.h
+
+1527168309 c:\users\c252496\desktop\c++ class\daring\daring\include\mazeobject.h
+	"types.h"
+
+1527169844 c:\users\c252496\desktop\c++ class\daring\daring\include\personobject.h
+	"MazeObject.h"
+
+1527168309 c:\users\c252496\desktop\c++ class\daring\daring\include\dungeonobject.h
+	"types.h"
+	"cPlayer.h"
+	"MazeObject.h"
+	"Monster.h"
+	"CombatObject.h"
+
+1527179276 c:\users\c252496\desktop\c++ class\daring\daring\include\cplayer.h
+	<iostream>
+	"PersonObject.h"
+	"DungeonObject.h"
+
+1527168465 c:\users\c252496\desktop\c++ class\daring\daring\include\monster.h
+	<iostream>
+	"PersonObject.h"
+
+1527168309 c:\users\c252496\desktop\c++ class\daring\daring\include\combatobject.h
+	"cPlayer.h"
+	"Monster.h"
+	"RandomObject.h"
+
+1527168309 c:\users\c252496\desktop\c++ class\daring\daring\include\randomobject.h
+	<random>
+
+1527168309 source:c:\users\c252496\desktop\c++ class\daring\daring\src\combatobject.cpp
+	"types.h"
+	<fstream>
+	<windows.h>
+	<conio.h>
+	<iostream>
+	<stdlib.h>
+	<string>
+	"CombatObject.h"
+	"PersonObject.h"
+	"cPlayer.h"
+
+1527168309 source:c:\users\c252496\desktop\c++ class\daring\daring\src\cplayer.cpp
+	<iostream>
+	<cstdlib>
+	"cPlayer.h"
+	"DungeonObject.h"
+
+1527168309 source:c:\users\c252496\desktop\c++ class\daring\daring\src\dungeonobject.cpp
+	<fstream>
+	<windows.h>
+	<conio.h>
+	<iostream>
+	<stdlib.h>
+	<string>
+	"types.h"
+	"PersonObject.h"
+	"CombatObject.h"
+	"DungeonObject.h"
+
+1527168309 source:c:\users\c252496\desktop\c++ class\daring\daring\src\mazeobject.cpp
+	"MazeObject.h"
+	"types.h"
+	<iostream>
+	<windows.h>
+	<fstream>
+	<stdlib.h>
+
+1527168309 source:c:\users\c252496\desktop\c++ class\daring\daring\src\monster.cpp
+	<iostream>
+	<cstdlib>
+	"Monster.h"
+
+1527169347 source:c:\users\c252496\desktop\c++ class\daring\daring\src\personobject.cpp
+	"types.h"
+	"PersonObject.h"
+
+1527168309 source:c:\users\c252496\desktop\c++ class\daring\daring\src\randomobject.cpp
 	<random>
 	<iostream>
 	<ctime>

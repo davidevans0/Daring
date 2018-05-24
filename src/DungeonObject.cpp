@@ -25,7 +25,7 @@ DungeonObject::DungeonObject()
 
     Maze.loadMaze();
 
-    PlayerOne.setsymbol(PERSON);
+    PlayerOne.initialize(mazeAccess,STARTX,STARTY,PERSON);
 
     Goblin1.setMonsterStats(30,10,5,"Dagger","Quick Stab","Goblin");
     Goblin2.setMonsterStats(30,20,5,"Dagger","Quick Stab","Goblin");
@@ -221,7 +221,6 @@ bool DungeonObject::displayEncounter()
             cout << endl;
             playerState = 2;
     }
-    Maze.killlook();
     return playerDead;
 }
 
@@ -239,19 +238,18 @@ bool DungeonObject::MovePerson(char str)
     switch (str)
     {
         case 'U':
-            PlayerOne.moveup(mazeAccess, SPEED);
+            PlayerOne.moveup(mazeAccess, SPEED, hit_symbol);
             break;
         case 'D':
-            PlayerOne.movedown(mazeAccess, SPEED);
+            PlayerOne.movedown(mazeAccess, SPEED, hit_symbol);
             break;
         case 'L':
-            PlayerOne.moveleft(mazeAccess, SPEED);
+            PlayerOne.moveleft(mazeAccess, SPEED, hit_symbol);
             break;
         case 'R':
-            PlayerOne.moveright(mazeAccess, SPEED);
+            PlayerOne.moveright(mazeAccess, SPEED, hit_symbol);
             break;
     }
-    Maze.moveInMaze(PlayerOne.getxlocation(),PlayerOne.getylocation(),PlayerOne.getsymbol());
     //We hit the wall which is not an encounter
     if ((hit_symbol != WALL) && (hit_symbol != FLOOR) && (hit_symbol != HWALL) && (hit_symbol != UWALL))
     {

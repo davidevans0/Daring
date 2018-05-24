@@ -6,12 +6,14 @@
 class PersonObject
 {
     public:
-        PersonObject(MazeObject*);
+        PersonObject();
         ~PersonObject() {}
-        void moveup(MazeObject*,int, char&);
-        void movedown(MazeObject*,int, char&);
-        void moveleft(MazeObject*,int, char&);
-        void moveright(MazeObject*,int, char&);
+
+        void initialize(MazeObject*, int, int, char);
+        bool moveup(MazeObject*,int, char&);
+        bool movedown(MazeObject*,int, char&);
+        bool moveleft(MazeObject*,int, char&);
+        bool moveright(MazeObject*,int, char&);
         void setsymbol(char);
         char getsymbol();
         void setlocation(MazeObject*,int,int);

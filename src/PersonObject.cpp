@@ -1,31 +1,35 @@
 
 #include "types.h"
 #include "PersonObject.h"
+#include "MazeObject.h"
 
 /*-------------------------------------------------------------
  Object PersonObject
  object is used to create player and implements motion once
  within the maze.
 --------------------------------------------------------------*/
-PersonObject::PersonObject(MazeObject* inMaze)
+PersonObject::PersonObject()
 {
-    xLoc = STARTX;
-    yLoc = STARTY;
-    Symbol = '0'; //default symbol
-    inMaze->insertInMaze(xLoc,yLoc,Symbol);
+}
 
+void PersonObject::initialize(MazeObject* inMaze, int x,int y,char c)
+{
+    xLoc = x;
+    yLoc = y;
+    Symbol = c; //default symbol
+    inMaze->insertInMaze(xLoc,yLoc,Symbol);
 }
 
 bool PersonObject::moveup(MazeObject* inMaze, int amount, char& c)
 {
     bool moved = false;
 
-    c = inMaze->lookUp();
+    c = inMaze->lookUp(xLoc, yLoc);
     if (c == FLOOR)
     {
-        inMaze->insertInMaze(xLoc, yLoc, FLOOR)
+        inMaze->insertInMaze(xLoc, yLoc, FLOOR);
         xLoc = xLoc - amount;
-        inMaze->insertInMaze(xLoc, yLoc, FLOOR)
+        inMaze->insertInMaze(xLoc, yLoc, Symbol);
         moved = true;
     }
     else
@@ -35,19 +39,61 @@ bool PersonObject::moveup(MazeObject* inMaze, int amount, char& c)
     return moved;
 }
 
-void PersonObject::movedown(MazeObject* inMaze, int amount)
+bool PersonObject::movedown(MazeObject* inMaze, int amount, char& c)
 {
-    xLoc = xLoc + amount;
+    bool moved = false;
+
+    c = inMaze->lookDown(xLoc, yLoc);
+    if (c == FLOOR)
+    {
+        inMaze->insertInMaze(xLoc, yLoc, FLOOR);
+        xLoc = xLoc + amount;
+        inMaze->insertInMaze(xLoc, yLoc, Symbol);
+        moved = true;
+    }
+    else
+    {
+        moved = false;
+    }
+    return moved;
 }
 
-void PersonObject::moveleft(MazeObject* inMaze, int amount)
+bool PersonObject::moveleft(MazeObject* inMaze, int amount, char& c)
 {
-    yLoc = yLoc - amount;
+    bool moved = false;
+
+    c = inMaze->lookLeft(xLoc, yLoc);
+    if (c == FLOOR)
+    {
+        inMaze->insertInMaze(xLoc, yLoc, FLOOR);
+        yLoc = yLoc - amount;
+        inMaze->insertInMaze(xLoc, yLoc, Symbol);
+        moved = true;
+    }
+    else
+    {
+        moved = false;
+    }
+    return moved;
 }
 
-void PersonObject::moveright(MazeObject* inMaze, int amount)
+bool PersonObject::moveright(MazeObject* inMaze, int amount, char& c)
 {
-    yLoc = yLoc + amount;
+    bool moved = false;
+
+    c = inMaze->lookRight(xLoc, yLoc);
+    if (c == FLOOR)
+    {
+        inMaze->insertInMaze(xLoc, yLoc, FLOOR);
+        yLoc = yLoc + amount;
+        inMaze->insertInMaze(xLoc, yLoc, Symbol);
+        moved = true;
+    }
+    else
+    {
+        moved = false;
+    }
+    return moved;
 }
 
 void PersonObject::setsymbol (char xx)

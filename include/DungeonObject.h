@@ -2,10 +2,10 @@
 #define DUNGEONOBJECT_H
 
 #include "types.h"
-#include "cPlayer.h"
 #include "MazeObject.h"
 #include "Monster.h"
 #include "CombatObject.h"
+#include "cPlayer.h"
 
 class DungeonObject
 {

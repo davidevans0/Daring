@@ -10,12 +10,11 @@ using namespace std;
 class cPlayer : public PersonObject
 {
     public:
-        void showStats();
-        void showMap();
 
-       cPlayer(){}
+       cPlayer() {}
        ~cPlayer(){}
 
+        void showStats();
         void setPlayerStats(int, int, int, string, string, string);
         void setheroName(string sHN) {heroName = sHN;}
         void setCharType(string sCT) {charType = sCT;}
