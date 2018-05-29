@@ -34,7 +34,10 @@ class DungeonObject
         int playerState;
 
         MazeObject Maze;
+
         cPlayer PlayerOne;
+
+        Monster monsterArray[MON_POPULATION];
 
         char encounter;
 

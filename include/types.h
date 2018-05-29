@@ -37,6 +37,8 @@
 #define WRMONSTER '&'
 #define EXIT '*'
 
+#define MON_POPULATION 13
+
 #define WEAKNESS 3
 
 enum InputActions { MOVE = 1, ENCOUNTER, QUIT, STANDSTILL };
