@@ -37,6 +37,7 @@ class Monster : public PersonObject
         int MagicDmg;
         string Spell;
         string Weapon;
+        char Symbol;
 };
 
 

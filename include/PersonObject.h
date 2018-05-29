@@ -9,7 +9,7 @@ class PersonObject
         PersonObject();
         ~PersonObject() {}
 
-        void initialize(MazeObject*, int, int, char);
+        bool initialize(MazeObject*, int, int, char);
         bool moveup(MazeObject*,int, char&);
         bool movedown(MazeObject*,int, char&);
         bool moveleft(MazeObject*,int, char&);

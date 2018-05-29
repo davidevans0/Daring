@@ -22,26 +22,44 @@ DungeonObject::DungeonObject()
 {
     playerAccess = &PlayerOne;
     mazeAccess = &Maze;
+    bool in_ok = false;
+    int in_type = 0;
+    char c_type;
 
     Maze.loadMaze();
 
     PlayerOne.initialize(mazeAccess,STARTX,STARTY,PERSON);
 
+    //Populate the dungeon with monsters
+    for (int x = 0; x < MON_POPULATION; x++)
+    {
+        in_type = rnd.rand_1to3();
+        switch (in_type)
+       {
+            case 1:
+                monsterArray[x].setMonsterStats(30,10,5,"Dagger","Quick Stab","Goblin");
+                c_type = GOMONSTER;
+                break;
+            case 2:
+                monsterArray[x].setMonsterStats(40,20,10,"Trident","Water Spear","Murlock");
+                c_type = MURMONSTER;
+                break;
+           case 3:
+                monsterArray[x].setMonsterStats(20,6,30,"Poltergeist","Life Drain","Wraith");
+                c_type = WRMONSTER;
+                break;
+        }
+
+        in_ok = false;
+        while (!in_ok)
+        {
+            in_ok = monsterArray[x].initialize(mazeAccess, rnd.rand_location_x(), rnd.rand_location_y(), c_type);
+        }
+    }
+
     Goblin1.setMonsterStats(30,10,5,"Dagger","Quick Stab","Goblin");
-    Goblin2.setMonsterStats(30,20,5,"Dagger","Quick Stab","Goblin");
-    Goblin3.setMonsterStats(30,20,5,"Dagger","Quick Stab","Goblin");
-
     Murlock1.setMonsterStats(40,20,10,"Trident","Water Spear","Murlock");
-    Murlock2.setMonsterStats(40,25,10,"Trident","Water Spear","Murlock");
-    Murlock3.setMonsterStats(40,25,10,"Trident","Water Spear","Murlock");
-    Murlock4.setMonsterStats(40,25,10,"Trident","Water Spear","Murlock");
-    Murlock5.setMonsterStats(40,25,10,"Trident","Water Spear","Murlock");
-
     Wraith1.setMonsterStats(20,6,30,"Poltergeist","Life Drain","Wraith");
-    Wraith2.setMonsterStats(20,5,30,"Poltergeist","Life Drain","Wraith");
-    Wraith3.setMonsterStats(20,5,30,"Poltergeist","Life Drain","Wraith");
-    Wraith4.setMonsterStats(20,5,30,"Poltergeist","Life Drain","Wraith");
-    Wraith5.setMonsterStats(20,5,30,"Poltergeist","Life Drain","Wraith");
 }
 
 DungeonObject::~DungeonObject()

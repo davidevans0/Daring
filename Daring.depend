@@ -1,10 +1,10 @@
 # depslib dependency file v1.0
-1527185999 source:c:\users\c252496\desktop\c++ class\daring\src\personobject.cpp
+1527609502 source:c:\users\c252496\desktop\c++ class\daring\src\personobject.cpp
 	"types.h"
 	"PersonObject.h"
 	"MazeObject.h"
 
-1527186008 c:\users\c252496\desktop\c++ class\daring\include\personobject.h
+1527609502 c:\users\c252496\desktop\c++ class\daring\include\personobject.h
 	"MazeObject.h"
 
 1527168309 source:c:\users\c252496\desktop\c++ class\daring\main.cpp
@@ -44,7 +44,7 @@
 	"CombatObject.h"
 	"DungeonObject.h"
 
-1527270114 c:\users\c252496\desktop\c++ class\daring\include\dungeonobject.h
+1527609502 c:\users\c252496\desktop\c++ class\daring\include\dungeonobject.h
 	"types.h"
 	"MazeObject.h"
 	"Monster.h"
@@ -168,7 +168,7 @@
 	<iostream>
 	"PersonObject.h"
 
-1527184510 c:\users\c252496\desktop\c++ class\daring\include\monster.h
+1527612190 c:\users\c252496\desktop\c++ class\daring\include\monster.h
 	<iostream>
 	"PersonObject.h"
 

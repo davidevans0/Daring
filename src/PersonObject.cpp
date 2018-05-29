@@ -12,12 +12,17 @@ PersonObject::PersonObject()
 {
 }
 
-void PersonObject::initialize(MazeObject* inMaze, int x,int y,char c)
+bool PersonObject::initialize(MazeObject* inMaze, int x,int y,char c)
 {
-    xLoc = x;
-    yLoc = y;
-    Symbol = c; //default symbol
-    inMaze->insertInMaze(xLoc,yLoc,Symbol);
+    if (inMaze->getFromMaze(x,y) == FLOOR)
+    {
+        xLoc = x;
+        yLoc = y;
+        Symbol = c; //default symbol
+        inMaze->insertInMaze(xLoc,yLoc,Symbol);
+        return true;
+    }
+    else return false;
 }
 
 bool PersonObject::moveup(MazeObject* inMaze, int amount, char& c)
